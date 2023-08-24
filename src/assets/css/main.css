@@ -1,0 +1,245 @@
+@font-face{
+  font-family: 'montserrat';
+  src: url('../fonts//Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face{
+  font-family: 'montserrat';
+  src: url('../fonts//Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face{
+  font-family: 'montserrat';
+  src: url('../fonts//Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'montserrat';
+  font-weight: 400;
+}
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 40px;
+}
+.navigation{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+.navigation-logo,
+.navigation-input{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.navigation-logo img{
+  width: 65px;
+}
+.navigation-logo span{
+  font-size: 25px;
+  line-height: 30px;
+  color: #4793FF;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.navigation-input img{
+  width: 35px;
+}
+.navigation-input input{
+  width: 200px;
+  height: 37px;
+  border-radius: 10px;
+  background: rgba(71, 147, 255, 0.2);
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  font-weight: 500;
+  border: none;
+  outline: none;
+}
+.navigation-input input::placeholder{
+  color: #000000;
+}
+.content{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.content-left,
+.content-right{
+  background: #FFFFFF;
+  box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.5);
+  border-radius: 20px;
+  min-height: 300px;
+}
+.content-left{
+  width: 400px;
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.content-left__img{
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  right: 20px;
+  top: 46px;
+}
+.content-left__img img{
+  width: 100%;
+}
+.content-left__degree{
+  color: #4793FF;
+  font-size: 96px;
+  line-height: 117px;
+  font-weight: 500;
+}
+.content-left__day{
+  color: #000000;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 31px;
+}
+.content-left__time,
+.content-left__city{
+  font-size: 25px;
+  line-height: 30px;
+  color: #939CB0;
+}
+.content-left__time{
+  margin-bottom: 14px;
+}
+.content-right{
+  width: 750px;
+  position: relative;
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+}
+.content-right__img{
+  position: absolute;
+  width: 460px;
+  right: 0;
+  top: 0;
+}
+.content-right__item{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+.content-right__item--icon{
+  width: 38px;
+  height: 38px;
+  background: #FFFFFF;
+  box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
+  border-radius: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-right__item span{
+  font-size: 14px;
+  line-height: 17ppx;
+  color: #000000;
+}
+.content-right__item .content-right__item--text{
+  color: #939CB0;
+}
+
+.days{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 50px;
+}
+.days-controls{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.days-controls__btn{
+  padding: 7px 20px;
+  box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.5);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 22px;
+}
+.btn-week{
+  background: #4793FF;
+  color: #FFFFFF;
+}
+.btn-cancel{
+  background: #FFFFFF;
+  color: #000000;
+}
+.days-items{
+  width: 100%;
+  padding: 20px;
+  background: #FFFFFF;
+  box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.5);
+  border-radius: 0px 0px 20px 20px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 20px;
+}
+.card{
+  background: rgba(71, 147, 255, 0.2);
+  border-radius: 10px;
+  padding: 11px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 3px 20px rgba(147, 144, 144, 0.28);
+}
+.card-temp__nigt
+.card-title{
+  margin-bottom: 7px;
+}
+.card-title,
+.card-temp{
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #000000;
+}
+.card-date{
+  font-size: 14px;
+  line-height: 17px;
+}
+.card-date,
+.card-temp__nigt,
+.card-weather{
+  color: #939CB0;
+}
+.card-temp__nigt,
+.card-weather{
+  font-size: 13px;
+  line-height: 16px;
+}
+.card-img{
+  width: 48px;
+  height: 48px;
+  margin: 13px 0;
+}
+.card-img img{
+  width: 100%;
+}
